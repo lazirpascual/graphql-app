@@ -60,3 +60,5 @@ const UserList = [
     nationality: "CHILE",
   },
 ];
+
+module.exports = { UserList };
