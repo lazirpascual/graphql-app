@@ -13,11 +13,12 @@ const QUERY_ALL_USERS = gql`
 `;
 
 export const useUsers = () => {
-  const { error, data, loading } = useQuery(QUERY_ALL_USERS);
+  const { error, data, loading, refetch } = useQuery(QUERY_ALL_USERS);
 
   return {
     error,
     data,
     loading,
+    refetch,
   };
 };
